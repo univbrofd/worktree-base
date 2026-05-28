@@ -1,0 +1,14 @@
+includes:
+  - vendor/szepeviktor/phpstan-wordpress/extension.neon
+
+parameters:
+  level: 5
+  paths:
+    - web/app/themes/clone-theme
+    - web/app/mu-plugins
+  excludePaths:
+    - */node_modules/*
+    - */vendor/*
+    - */public/*
+  bootstrapFiles:
+    - vendor/php-stubs/wordpress-stubs/wordpress-stubs.php

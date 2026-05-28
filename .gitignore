@@ -1,0 +1,39 @@
+# env
+.env
+.env.local
+.env.*.local
+
+# Bedrock
+/web/wp/
+/web/app/mu-plugins/bedrock-autoloader.php
+/web/app/upgrade/
+/web/app/uploads/
+/web/.htaccess
+
+# Composer / npm
+/vendor/
+**/node_modules/
+**/composer.lock
+
+# Sage build artifacts
+/web/app/themes/*/public/
+/web/app/themes/*/.vite/
+
+# DDEV
+.ddev/.dbimports/
+.ddev/.global_commands/
+.ddev/import-db/
+.ddev/db_snapshots/
+.ddev/.homeadditions/
+.ddev/import.yaml
+
+# clone workflow artifacts
+/_mirror/
+/_screenshots/
+/_pages.txt
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.log
